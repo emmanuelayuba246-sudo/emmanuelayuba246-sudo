@@ -19,5 +19,4 @@ I'm a Agricultural Economist | Data Analyst
 - Python for Data Science
 
 ## Let's Connect!
-- [LinkedIn](www.linkedin.com/in/emmanuel-ayuba-0a5526400)
 - [Social](https://t.co/ZDxEPHPxQm)
