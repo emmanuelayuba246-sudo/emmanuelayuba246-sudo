@@ -20,3 +20,4 @@ I'm a Agricultural Economist | Data Analyst
 
 ## Let's Connect!
 www.linkedin.com/in/emmanuel-ayuba-0a5526400
+https://t.co/ZDxEPHPxQm
