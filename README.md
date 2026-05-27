@@ -14,6 +14,7 @@ I'm a Agricultural Economist | Data Analyst
   - [Adidas Sales Analysis Dashboard](https://github.com/emmanuelayuba246-sudo/ADIDAS-SALES-PERFORMANCE-ANALYSIS)
   - [FIFA Player Perfomance](https://github.com/emmanuelayuba246-sudo/FIFA-Player-Performance-Data-Analysis-)
   - [Super Store Sales](https://github.com/emmanuelayuba246-sudo/Super-Store-Sales-Report)
+  - [Educational Performance Data Analysis](https://github.com/emmanuelayuba246-sudo/Educational-Performance-Data-Analysis)
 
 ## Let's Connect!
 - [Social](https://t.co/ZDxEPHPxQm)
