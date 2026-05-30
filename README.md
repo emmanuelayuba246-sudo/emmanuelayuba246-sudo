@@ -3,11 +3,12 @@ I'm a Agricultural Economist | Data Analyst
 
 ## Tools I work with
 - R Studio
--   Power BI
--   SQL
--   Tableau
--   Python
--   Microsoft Excel
+- Stata
+- Microsoft Power BI
+- SQL
+- Tableau
+- Python
+- Microsoft Excel
 
 ## My Projects
   - [Hospital Patient Data Analysis](https://github.com/emmanuelayuba246-sudo/Hospital-Patient-Data-Analysis)
