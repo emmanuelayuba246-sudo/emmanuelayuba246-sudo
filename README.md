@@ -18,4 +18,4 @@ I'm a Agricultural Economist | Data Analyst
   - [Educational Performance Data Analysis](https://github.com/emmanuelayuba246-sudo/Educational-Performance-Data-Analysis)
 
 ## Let's Connect!
-- [Social](https://t.co/ZDxEPHPxQm)
+- [Social](https://linktr.ee/emmanuel246x)
