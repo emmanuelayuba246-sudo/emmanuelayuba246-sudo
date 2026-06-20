@@ -12,6 +12,7 @@ I'm a Agricultural Economist | Data Analyst
 
 ## My Projects
   - [Hospital Patient Data Analysis](https://github.com/emmanuelayuba246-sudo/Hospital-Patient-Data-Analysis)
+  - [Education Technology](https://github.com/emmanuelayuba246-sudo/Education-Technology)
   - [Adidas Sales Analysis Dashboard](https://github.com/emmanuelayuba246-sudo/ADIDAS-SALES-PERFORMANCE-ANALYSIS)
   - [FIFA Player Perfomance](https://github.com/emmanuelayuba246-sudo/FIFA-Player-Performance-Data-Analysis-)
   - [Super Store Sales](https://github.com/emmanuelayuba246-sudo/Super-Store-Sales-Report)
