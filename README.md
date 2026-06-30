@@ -18,5 +18,9 @@ I'm a Agricultural Economist | Data Analyst
   - [Super Store Sales](https://github.com/emmanuelayuba246-sudo/Super-Store-Sales-Report)
   - [Educational Performance Data Analysis](https://github.com/emmanuelayuba246-sudo/Educational-Performance-Data-Analysis)
 
+## Certifications
+- **Monitoring and Evaluation Practices** - DisaterReady (June 2026)
+- Certificate: https://drive.google.com/file/d/16iJaotUcYO3_FwKZOb-rsoQ4ltKH3Soz/view?usp=sharing
+
 ## Let's Connect!
 - [Social](https://linktr.ee/emmanuel246x)
