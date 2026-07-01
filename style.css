@@ -10,9 +10,10 @@
 }
 
 body{
-    background:#f5f7fb;
-    color:#333;
-    line-height:1.6;
+    background-image: url("image/background.jpg");
+    background-size: cover;
+    background-position: center;
+    bacground-attachment: fixed;
 }
 
 /* ===== Navigation ===== */
