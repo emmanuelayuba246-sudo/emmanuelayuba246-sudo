@@ -27,9 +27,8 @@ body{
     justify-content:space-between;
     align-items:center;
     padding:20px 8%;
-    background:#082c6c;
-    z-index:1000;
-    box-shadow:0 4px 10px rgba(0,0,0,.15);
+    background: rgba(8, 44, 108, 0.85);
+    background-filter: blur(10px);
 }
 
 .logo{
@@ -66,8 +65,7 @@ body{
     align-items:center;
     justify-content:space-between;
     padding:120px 8%;
-    background:linear-gradient(135deg, #0f172a, #14532d, #16a34a);
-    color:white;
+    background: radial-gradient(circle at top left, #42a5f5 0%, #d47a1 45%, #082c6c 100%);
 }
 
 .hero-text{
