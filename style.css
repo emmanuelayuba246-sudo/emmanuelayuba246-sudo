@@ -14,19 +14,19 @@ body{
     background-image: url("image/background.jpg");
     background-size: cover;
     background-position: center;
-    bacground-attachment: fixed;
+    background-attachment: fixed;
 }
 
 /* ===== Navigation ===== */
 
 .navbar{
     background:rgba(2,11,36,.85);
-    backdrop-filter:blur(12px);
+    backdrop-filter: blur(12px);
     border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .logo{
-    color:#fff;
+    color:#ffffff;
     font-size:28px;
     font-weight:700;
 }
