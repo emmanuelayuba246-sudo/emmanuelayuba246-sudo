@@ -19,13 +19,15 @@ body{
 /* ===== Navigation ===== */
 
 .navbar{
+    display: flex;
+    justify-contet: space-between;
+    align-items: center;
+    
     background:rgba(2,11,36,.85);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-bottom:1px solid rgba(255,255,255,.08);
-    position: sticky;
-    top: 0;
-    right: 0;
+    padding: 15px 40px;
     width: 100%;
     z-index: 1000;
 }
@@ -39,6 +41,8 @@ body{
 .navbar ul{
     display:flex;
     list-style:none;
+    margin-left: auto;
+    gap: 30px;
 }
 
 .navbar ul li{
