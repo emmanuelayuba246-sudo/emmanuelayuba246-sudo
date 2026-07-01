@@ -27,8 +27,9 @@ body{
     justify-content:space-between;
     align-items:center;
     padding:20px 8%;
-    background: rgba(8, 44, 108, 0.85);
-    background-filter: blur(10px);
+    background: rgba(2, 11, 36, 0.85);
+    background-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .logo{
@@ -60,12 +61,52 @@ body{
 /* ===== Hero Section ===== */
 
 .hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:120px 8%;
-    background: radial-gradient(circle at top left, #42a5f5 0%, #d47a1 45%, #082c6c 100%);
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #020b24 0%,
+        #082c6c 35%,
+        #0d47a1 70%,
+        #1565c0 100%
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(
+        circle,
+        rgba(66, 165, 245, 0.35) 0%,
+        transparent 70%
+    );
+    border-radius: 50%;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: -250px;
+    left: -250px;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(
+        circle,
+        rgba(13, 71, 161, 0.4) 0%,
+        transparent 70%
+    );
+    border-radius: 50%;
+}
+
+.hero {
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.06) 1px, transparent 1px),
+        linear-gradient(135deg, #020b24 0%, #082c6c 35%, #0d47a1 70%, #1565c0 100%);
 }
 
 .hero-text{
