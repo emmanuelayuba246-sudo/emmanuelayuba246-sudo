@@ -1,7 +1,7 @@
-## Hi I'm Emmanuel Ayuba! 👋
+## Hi, I'm Emmanuel Ayuba!
 I am an Agricultural Economist and Data Analyst with a strong interest in applying data driven insights to support agricultural development, research, and evidence based decision making. I am passionate about solving complex problems through analytical thinking and contributing to sustainable development and organizational growth. I am committed to continuous learning, professional excellence, and delivering meaningful impact in agriculture, development, and related sectors.
 
-## Core Skill##
+## Core Skill
 - Agricultural Economics and Policy Analysis, Farm Management, Rural Development
 - Data Collection, Data Cleaning, Data Analysis, Data Interpretation
 - Monitoring and Evaluation, Results Based Management, Performance Measurement
