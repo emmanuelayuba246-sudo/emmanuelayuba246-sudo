@@ -11,7 +11,6 @@
 
 body{
     background: linear-gradient(135deg, #0f172a, #1e3a8a, #0ea5ep);
-    background-image: url("image/background.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -21,8 +20,14 @@ body{
 
 .navbar{
     background:rgba(2,11,36,.85);
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-bottom:1px solid rgba(255,255,255,.08);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo{
@@ -129,12 +134,14 @@ body{
 .hero h1{
     font-size:30px;
     font-weight:400;
+    color: #ffffff;
 }
 
 .hero h2{
     font-size:60px;
     font-weight:800;
     margin:10px 0;
+    color: #ffffff;
 }
 
 .hero h3{
