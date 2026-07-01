@@ -23,9 +23,9 @@ body{
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-bottom:1px solid rgba(255,255,255,.08);
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     z-index: 1000;
 }
@@ -146,7 +146,7 @@ body{
 
 .hero h3{
     font-size:24px;
-    color:#bbdefb;
+    color:#ffffff;
     margin-bottom:20px;
 }
 
