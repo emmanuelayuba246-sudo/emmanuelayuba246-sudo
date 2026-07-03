@@ -55,20 +55,20 @@ body{
 /* ===== Navigation ===== */
 
 .navbar{
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
     
     background: var(--navbar);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-bottom:1px solid rgba(255,255,255,.08);
-    padding: 15px 40px;
+    padding: 15px 20px;
     z-index: 99999;
 }
 
