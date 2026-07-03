@@ -61,6 +61,7 @@ body{
     width: 100%;
 
     display: center;
+    justify-content: space-between;
     align-items: center;
     
     background: var(--navbar);
@@ -72,7 +73,7 @@ body{
 }
 
 .logo{
-    color: var(--nav-text);
+    color: #ffffff;
     font-size:28px;
     font-weight:700;
     transition: .3s;
@@ -85,12 +86,11 @@ body{
 .navbar ul{
     display:flex;
     list-style:none;
-    margin-left: auto;
     gap: 30px;
 }
 
 .navbar ul li a{
-    color: var(--nav-text);
+    color: ffffff;
     text-decoration:none;
     font-weight:500;
     transition:.3s;
