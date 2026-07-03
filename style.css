@@ -108,7 +108,7 @@ body{
 }
 
 .navbar li {
-    display: block;
+    display: inline-block;
 }
 
 .navbar a {
