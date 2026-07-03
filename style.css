@@ -101,7 +101,6 @@ body{
     background-size: 130%;
     animation: moveBackground 15s ease-in-out infinite alternate;
     position: relative;
-    z-index: -1;
 }
 
 @keyframes moveBackground {
