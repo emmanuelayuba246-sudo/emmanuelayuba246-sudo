@@ -504,18 +504,19 @@ body{
 /* ===== FOOTER ===== */
 .footer{
     width: 100%;
-    padding: 20px 0;
-    background: var(--body-color);
-    border-top: 1px solid var(--first-shadow-color);
+    padding: 25px 0;
+    background: var(--section-bg);
+    border-top: 1px solid rgba(255,255,255,0.1);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   /* Centers everything horizontally */
+    align-items: center;
     text-align: center;
 }
 
 .footer p{
-    color: var(--text-color-second);
+    color: var(--text);
     margin-top: 10px;
+    font-size: 14px;
 }
