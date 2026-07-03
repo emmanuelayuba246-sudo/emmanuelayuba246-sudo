@@ -80,9 +80,7 @@ body{
     text-align:center;
     padding:80px 8% 50px;
     color:white;
-     background-size: 130%;
-    animation: moveBackground 15s ease-in-out infinite alternate;
-
+   
     background:
     radial-gradient(circle at top left,#5fa8ff 0%,transparent 35%),
     radial-gradient(circle at bottom right,#1e88e5 0%,transparent 40%),
@@ -91,8 +89,8 @@ body{
 }
 
 .hero{
-    position:relative;
-    overflow:hidden;
+    background-size: 130%;
+    animation: moveBackground 15s ease-in-out infinite alternate;
 }
 
 @keyframes moveBackground {
