@@ -9,6 +9,21 @@
     scroll-behavior:smooth;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: .8s;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 body{
     background: linear-gradient(135deg, #0f172a, #1e3a8a, #0ea5ep);
     background-size: cover;
@@ -36,6 +51,11 @@ body{
     color:#ffffff;
     font-size:28px;
     font-weight:700;
+    transition: .3s;
+}
+
+.logo:hover {
+    transform: rotate(-5deg) scale(1.05);
 }
 
 .navbar ul{
@@ -71,6 +91,8 @@ body{
     text-align:center;
     padding:80px 8% 50px;
     color:white;
+     background-size: 130%;
+    animation: moveBackground 15s ease-in-out infinite alternate;
 
     background:
     radial-gradient(circle at top left,#5fa8ff 0%,transparent 35%),
@@ -84,6 +106,15 @@ body{
     overflow:hidden;
 }
 
+@keyframes moveBackground {
+    from {
+        background-position: left;
+    }
+
+    to {
+        background-position: right;
+    }
+}
 .hero::before{
     content:"";
     position:absolute;
@@ -167,12 +198,12 @@ body{
     border-radius:40px;
     text-decoration:none;
     font-weight:600;
-    transition:.3s;
+    transition:.3s ease;
 }
 
 .btn:hover{
-    transform:translateY(-4px);
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
 }
 
 .hero-image img{
@@ -228,6 +259,13 @@ body{
 
 .skills{
     padding:100px 0;
+    transform: translateY(25px);
+    transition: .6s;
+}
+
+.skill.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .skills h2{
