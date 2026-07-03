@@ -216,6 +216,8 @@ body{
 
 .hero h3{
     font-size:24px;
+    font-weight:400;
+    letter-spacing:0.5px;
     color: var(--hero-text);
     margin-bottom:20px;
 }
@@ -310,12 +312,13 @@ body{
     max-width:850px;
     margin:auto;
     line-height:1.8;
+    margin-bottom:0;
 }
 
 .skills{
     padding:100px 0;
     background: var(--section-bg);
-    transform: translateY(25px);
+    
     transition: background-color .4s ease,
                 background .4s ease,
                 color .4s ease,
@@ -324,7 +327,7 @@ body{
 
 .skill-card.show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(25px);
 }
 
 .skills h2{
