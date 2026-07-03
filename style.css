@@ -14,7 +14,7 @@ html {
 }
 
 body{
-    background: linear-gradient(135deg, #0f172a, #1e3a8a, #0ea5ep);
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #0ea5e9);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -24,7 +24,7 @@ body{
 
 .navbar{
     display: flex;
-    justify-contet: space-between;
+    justify-content: space-between;
     align-items: center;
     
     background:rgba(2,11,36,.85);
@@ -72,6 +72,9 @@ body{
 /* ===== Hero Section ===== */
 
 .hero{
+    position: relative;
+    overflow: hidden;
+    
     min-height:70vh;
     display:flex;
     flex-direction:column;
