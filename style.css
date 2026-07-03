@@ -88,27 +88,21 @@ body{
 .navbar ul{
     display: flex;
     list-style: none;
-    flex-wrap: nowrap;
-    gap: 12px;
-    flex-direction: row;
+    gap: 25px;
     margin: 0;
     padding: 0;
 }
 
 .navbar ul li a{
-    color: #ffffff;
-    text-decoration:none;
+    color: white;
+    text-decoration: none;
     font-weight:500;
     font-size: 14px;
     transition:.3s;
 }
 
 .navbar ul li a:hover{
-    color:#90caf9;
-}
-
-.navbar li {
-    display: inline-block;
+    color: white;
 }
 
 .navbar a {
