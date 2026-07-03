@@ -249,7 +249,8 @@ body{
 
 .skills{
     padding:100px 0;
-    background:#f7f9fc;
+    background:#ffffff;
+    border-top:1px solid #e5e7eb
     transform: translateY(25px);
     transition: .6s;
 }
