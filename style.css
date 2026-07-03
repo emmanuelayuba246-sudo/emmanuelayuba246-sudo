@@ -114,6 +114,13 @@ body{
     }
 }
 
+.hero-text{
+    position: relative;
+    z-index: 2;
+    max-width:800px;
+    margin:0 auto;
+}
+
 .hero::before{
     content:"";
     position:absolute;
@@ -124,6 +131,7 @@ body{
     top:-250px;
     left:-250px;
     filter:blur(80px);
+    pointer-event: none;
 }
 
 .hero::after{
@@ -136,13 +144,7 @@ body{
     bottom:-220px;
     right:-220px;
     filter:blur(80px);
-}
-
-.hero-text{
-    position: relative;
-    z-index: 1;
-    max-width:800px;
-    margin:0 auto;
+    pointer-event: none;
 }
 
 .hero h1{
@@ -172,7 +174,7 @@ body{
 
 .hero-buttons{
     position: relative;
-    z-index: 1;
+    z-index: 5;
     display:flex;
     justify-content:center;
     gap:20px;
