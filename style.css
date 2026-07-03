@@ -18,11 +18,16 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+    padding-top: 75px;
 }
 
 /* ===== Navigation ===== */
 
 .navbar{
+    position: sticky;
+    top: 0;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
