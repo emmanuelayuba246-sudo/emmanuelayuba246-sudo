@@ -13,17 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-section {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: .8s;
-}
-
-section.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 body{
     background: linear-gradient(135deg, #0f172a, #1e3a8a, #0ea5ep);
     background-size: cover;
