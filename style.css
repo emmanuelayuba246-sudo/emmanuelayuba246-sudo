@@ -140,13 +140,13 @@ body{
     position: relative;
     overflow: hidden;
     
-    min-height:70vh;
+    min-height:50vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:80px 8% 50px;
+    padding:40px 8% 30px;
     color:white;
    
     background: var(--hero-bg);
