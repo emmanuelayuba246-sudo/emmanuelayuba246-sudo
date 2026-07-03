@@ -60,11 +60,12 @@ body{
     left: 0;
     width: 100%;
 
-    display: center;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 8%;
+    background: rgba(2,11,36,.85);
     
-    background: var(--navbar);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-bottom:1px solid rgba(255,255,255,.08);
@@ -87,6 +88,9 @@ body{
     display:flex;
     list-style:none;
     gap: 30px;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar ul li a{
@@ -98,6 +102,15 @@ body{
 
 .navbar ul li a:hover{
     color:#90caf9;
+}
+
+.navbar li {
+    display: block;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
 }
 
 /* ===== Hero Section ===== */
