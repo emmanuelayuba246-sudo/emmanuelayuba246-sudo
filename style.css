@@ -322,7 +322,7 @@ body{
     background: var(--section-bg);
     border-top:1px solid #e5e7eb;
     transform: translateY(25px);
-    transition: transition: background-color .4s ease,
+    transition: background-color .4s ease,
                 background .4s ease,
                 color .4s ease,
                 border-color .4s ease;
@@ -409,7 +409,7 @@ body{
     box-shadow: 
         0 8px 20px rgba(0,0,0,0.12),
         0 18px 45px rgba(0,0,0,0.18);
-    transition: transition: background-color .4s ease,
+    transition: background-color .4s ease,
                 background .4s ease,
                 color .4s ease,
                 border-color .4s ease;
