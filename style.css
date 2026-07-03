@@ -113,6 +113,13 @@ body{
         background-position: right;
     }
 }
+
+.hero::before,
+.hero::after{
+    pointer-events: none;
+    z-index: 0;
+}
+
 .hero::before{
     content:"";
     position:absolute;
@@ -138,6 +145,8 @@ body{
 }
 
 .hero-text{
+    position: relative;
+    z-index: 1;
     max-width:800px;
     margin:0 auto;
 }
@@ -168,6 +177,8 @@ body{
 }
 
 .hero-buttons{
+    position: relative;
+    z-index: 1;
     display:flex;
     justify-content:center;
     gap:20px;
@@ -196,12 +207,18 @@ body{
     border-radius:40px;
     text-decoration:none;
     font-weight:600;
-    transition:.3s ease;
+    transition:transform .2s ease, box-shadow .2s ease;
+    cursor: pointer
 }
 
 .btn:hover{
     transform:translateY(-5px);
     box-shadow:0 12px 25px rgba(0,0,0,.25);
+}
+
+.btn:active{
+    transform:scale(-2px) scale(0.92);
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
 }
 
 .hero-image img{
