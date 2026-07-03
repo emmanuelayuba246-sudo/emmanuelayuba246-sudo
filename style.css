@@ -415,6 +415,21 @@ body{
 .cert-card p{
     color: #777;
     font-size: 15px;
+
+.cert-btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: var(--first-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.cert-btn:hover{
+    background: var(--first-color-hover);
+}
 }
 
 .projects{
