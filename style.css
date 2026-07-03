@@ -218,6 +218,7 @@ body{
 
 .about{
     padding:100px 0;
+    background:#f5f5f5;
 }
 
 .about .container{
@@ -249,7 +250,7 @@ body{
 
 .skills{
     padding:100px 0;
-    background:#ffffff;
+    background:#f5f5f5;
     border-top:1px solid #e5e7eb
     transform: translateY(25px);
     transition: .6s;
@@ -305,7 +306,7 @@ body{
 
 .projects{
     padding:100px 8%;
-    background:#f7f9fc;
+    background:#f5f5f5;
 }
 
 .projects h2{
