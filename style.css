@@ -27,9 +27,9 @@
 @media (prefers-color-scheme: light){
     :root{
         --bg: #f4f8ff;
-        --section-bg: #ffffff;
+        --section-bg: #f8fafc;
         --card-bg: #ffffff;
-        --text: #333333;
+        --text: #1f2937;
         --heading: #0d47a1;
         --navbar: rgba(255,255,255,.9);
         --nav-text: #0d47a1;
@@ -160,7 +160,7 @@ body{
     top:-250px;
     left:-250px;
     filter:blur(80px);
-    pointer-event: none;
+    pointer-events: none;
 }
 
 .hero::after{
@@ -173,7 +173,7 @@ body{
     bottom:-220px;
     right:-220px;
     filter:blur(80px);
-    pointer-event: none;
+    pointer-events: none;
 }
 
 .hero h1{
@@ -211,29 +211,18 @@ body{
     margin-top:30px;
 }
 
-.hero-image{
-    margin-top:50px;
-}
-
-.hero-image img{
-    width:280px;
-    height:280px;
-    border-radius:50%;
-    object-fit:cover;
-    border:8px solid white;
-    box-shadow:0 15px 40px rgba(0,0,0,.3);
-}
-
 .btn{
     display:inline-block;
-    background:white;
-    color:#0d47a1;
+    background: rgba(255,255,255,0.15);
+    color: var(--button-text);
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
     padding:15px 35px;
     border-radius:40px;
     text-decoration:none;
     font-weight:600;
     transition:transform .2s ease, box-shadow .2s ease;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -242,7 +231,7 @@ body{
 }
 
 .btn:active{
-    transform:scale(-2px) scale(0.92);
+    transform: scale(0.92);
     box-shadow:0 4px 10px rgba(0,0,0,.2);
 }
 
@@ -251,7 +240,7 @@ body{
     height:360px;
     border-radius:50%;
     object-fit:cover;
-    border:8px solid white;
+    border:8px solid var(--card-bg);
     box-shadow:0 15px 40px rgba(0,0,0,.3);
 }
 
@@ -280,7 +269,7 @@ body{
 
 .about h2{
     text-align:center;
-    color:#0d47a1;
+    color: var(--heading);
     font-size:40px;
     margin-bottom:25px;
 }
@@ -288,7 +277,7 @@ body{
 .about p{
     text-align:center;
     font-size:18px;
-    color:#555;
+    color: var(--text);
     max-width:850px;
     margin:auto;
     line-height:1.8;
@@ -301,12 +290,12 @@ body{
 .skills{
     padding:100px 0;
     background: var(--section-bg);
-    border-top:1px solid #e5e7eb
+    border-top:1px solid #e5e7eb;
     transform: translateY(25px);
     transition: .6s;
 }
 
-.skill.show {
+.skill-card.show {
     opacity: 1;
     transform: translateY(0);
 }
@@ -314,7 +303,7 @@ body{
 .skills h2{
     text-align:center;
     font-size:40px;
-    color:#0d47a1;
+    color: var(--heading);
     margin-bottom:60px;
 }
 
@@ -342,13 +331,13 @@ body{
 
 .skill-card i{
     font-size:60px;
-    color:#1565c0;
+    color: var(--button-bg);
     margin-bottom:20px;
 }
 
 .skill-card h3{
     font-size:22px;
-    color:#333;
+    color: var(--text);
 }
 /* ===========================
    Projects
@@ -362,7 +351,7 @@ body{
 .projects h2{
     text-align:center;
     font-size:40px;
-    color:#0d47a1;
+    color: var(--heading);
     margin-bottom:50px;
 }
 
@@ -388,20 +377,20 @@ body{
 }
 
 .project-card h3{
-    color:#0d47a1;
+    color: var(--heading);
     margin-bottom:15px;
 }
 
 .project-card p{
-    color:#666;
+    color: var(--text);
     margin-bottom:20px;
 }
 
 .project-card a{
     display:inline-block;
     padding:10px 20px;
-    background:#1565c0;
-    color:#fff;
+    background: var(--button-bg);
+    color: var(--button-text);
     text-decoration:none;
     border-radius:8px;
 }
