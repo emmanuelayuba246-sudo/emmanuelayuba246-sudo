@@ -19,14 +19,16 @@ body{
     background-position: center;
     background-attachment: fixed;
 
-    padding-top: 75px;
+    padding-top: 80px;
 }
 
 /* ===== Navigation ===== */
 
 .navbar{
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     
     display: flex;
     justify-content: space-between;
@@ -37,8 +39,7 @@ body{
     backdrop-filter: blur(12px);
     border-bottom:1px solid rgba(255,255,255,.08);
     padding: 15px 40px;
-    width: 100%;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .logo{
