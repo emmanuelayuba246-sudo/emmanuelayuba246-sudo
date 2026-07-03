@@ -1,0 +1,21 @@
+const skills = document.querySelectorAll(".skill");
+
+window.addEventListener("scroll", () => {
+    skills.forEach(skill => {
+        const top = skill.getBoundingClientRect().top;
+
+        if(top < window.innerHeight - 100){
+            skill.classList.add("show");
+        }
+    });
+});
+
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(section => {
+        if(section.getBoundingClientRect().top < window.innerHeight - 100){
+            section.classList.add("show");
+        }
+    });
+});
