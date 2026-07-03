@@ -378,7 +378,7 @@ body{
 }
 
 .projects{
-    margin: -1px;
+    margin: 0;
     padding:100px 8%;
     background: var(--section-bg);
     transition: background-color .4s ease,
