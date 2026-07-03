@@ -55,13 +55,12 @@ body{
 /* ===== Navigation ===== */
 
 .navbar{
-    display: inline-block;
-    margin-right: 15px;
-    text-decoration: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+
+    display: center;
     align-items: center;
     
     background: var(--navbar);
@@ -88,10 +87,6 @@ body{
     list-style:none;
     margin-left: auto;
     gap: 30px;
-}
-
-.navbar ul li{
-    margin-left:30px;
 }
 
 .navbar ul li a{
