@@ -176,6 +176,8 @@ body{
     }
 }
 
+.hero-text 1,
+.hero-text 3,
 .hero-text p,
 .hero-buttons{
     opacity: 0;
@@ -183,7 +185,7 @@ body{
 }
 
 .hero-text h1{
-    animation-delay: 0.2s;
+    animation-delay: 0.3s;
 }
 
 .hero-text h2{
@@ -191,15 +193,15 @@ body{
 }
 
 .hero-text h3{
-    animation-delay: 0.5s;
-}
-
-.hero-text p{
     animation-delay: 0.6s;
 }
 
-.hero-buttons{
+.hero-text p{
     animation-delay: 0.7s;
+}
+
+.hero-buttons{
+    animation-delay: 0.9s;
 }
 
 @keyframes slideUp{
