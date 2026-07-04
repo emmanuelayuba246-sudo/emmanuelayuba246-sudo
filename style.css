@@ -190,19 +190,19 @@ body{
 }
 
 .hero-text h2{
-    animation-delay: 0.3s;
-}
-
-.hero-text h3{
-    animation-delay: 0.3s;
-}
-
-.hero-text p{
     animation-delay: 0.4s;
 }
 
-.hero-buttons{
+.hero-text h3{
     animation-delay: 0.5s;
+}
+
+.hero-text p{
+    animation-delay: 0.6s;
+}
+
+.hero-buttons{
+    animation-delay: 0.7s;
 }
 
 @keyframes slideUp{
@@ -269,7 +269,7 @@ body{
     overflow: hidden;
 
     animation:
-        typing 0.6s steps(20, end);
+        typing 1s steps(20, end) forwards;
 }
 
 @keyframes typing{
