@@ -72,11 +72,13 @@ body{
                 background .4s ease,
                 color .4s ease,
                 border-color .4s ease;
-    background-size: cover;
+    background-size: 200% 200%;
     background-position: center;
     background-attachment: fixed;
+    animation: moveBackground 15s ease-in-out infinite alternate;
+    
 
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 /* ===== Navigation ===== */
@@ -138,8 +140,7 @@ body{
 /* ===== Hero Section ===== */
 
 .hero{
-    animation: heroFade 1s ease forwards,
-        moveBackground 15s ease-in-out infinite alternate;
+    animation: heroFade 1s ease forwards;
     position: relative;
     overflow: hidden;
     
@@ -352,7 +353,7 @@ background-size: 200% 200%;
 
 .about{
     padding:100px 0;
-    background: var(--section-bg);
+    background: transparent;
     transition: background-color .4s ease,
                 background .4s ease,
                 color .4s ease,
@@ -363,7 +364,7 @@ background-size: 200% 200%;
     background: var(--card-bg);
     padding:50px;
     border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.18);
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
 }
 
 .about h2{
@@ -385,7 +386,7 @@ background-size: 200% 200%;
 
 .skills{
     padding:100px 0;
-    background: var(--section-bg);
+    background: transparent;
     
     transition: background-color .4s ease,
                 background .4s ease,
@@ -412,7 +413,7 @@ background-size: 200% 200%;
 }
 
 .skill-card{
-    background: var(--card-bg);
+    background: transparent;
     border-radius:20px;
     padding:35px;
     text-align:center;
@@ -458,7 +459,7 @@ background-size: 200% 200%;
 /* ===== CERTIFICATIONS ===== */
 .certification{
     padding:100px 0;
-    background: var(--section-bg);
+    background: transparent;
 }
 
 .certification-grid{
@@ -510,7 +511,7 @@ background-size: 200% 200%;
 .projects{
     margin: 0;
     padding:100px 0;
-    background: var(--section-bg);
+    background: transparent;
     transition: background-color .4s ease,
                 background .4s ease,
                 color .4s ease;
@@ -572,7 +573,7 @@ background-size: 200% 200%;
 .footer{
     width: 100%;
     padding: 25px 0;
-    background: var(--section-bg);
+    background: transparent;
     border-top: 1px solid rgba(255,255,255,0.1);
 
     display: flex;
