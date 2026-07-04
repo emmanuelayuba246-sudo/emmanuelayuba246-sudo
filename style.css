@@ -259,16 +259,19 @@ body{
     font-size:60px;
     font-weight:800;
     margin:10px 0;
-    color: var(--hero-text);
+    color: var(--hero-text);  
+}
 
-     width: 0;
-    overflow: hidden;
+.typing{
+    display: inline-block;
+    width: 0;
     white-space: nowrap;
-    border-right: 4px solid var(--button-bg);
+    overflow: hidden;
+    border-right: 3px solid var(--button-bg);
 
     animation:
-        typing 3s steps(15, end) forwards,
-        blink .8s infinite;
+        typing 2.8s steps(16, end) forwards,
+        blink 0.8s infinite;
 }
 
 @keyframes typing{
@@ -276,7 +279,7 @@ body{
         width: 0;
     }
     to{
-        width: 15ch;
+        width: 16ch;
     }
 }
 
