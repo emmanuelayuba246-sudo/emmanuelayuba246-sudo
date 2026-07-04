@@ -380,15 +380,16 @@ body{
 /* ===== SECTION TITLES ===== */
 .section-title{
     text-align: center;
-    font-size: 46px;
+    font-size: 42px;
     font-weight: 700;
     color: var(--heading);
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
 }
 
 /* ===== CERTIFICATIONS ===== */
 .certification{
-    padding:120px 8% 80px;
+    padding:100px 0;
     background: var(--section-bg);
 }
 
@@ -396,6 +397,8 @@ body{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .certification-card{
@@ -423,18 +426,9 @@ body{
     border-radius:8px;
 }
 
-/* ===== SECTION TITLES ===== */
-.section-title{
-    text-align: center;
-    font-size: 46px;
-    font-weight: 700;
-    color: var(--heading);
-    margin-bottom: 50px;
-}
-
 .projects{
     margin: 0;
-    padding:120px 8% 80px;
+    padding:100px 0;
     background: var(--section-bg);
     transition: background-color .4s ease,
                 background .4s ease,
@@ -445,6 +439,8 @@ body{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .project-card{
