@@ -431,11 +431,12 @@ body{
 }
 
 .certification-card img{
-    width: 80px;
-    height: 80px;
+    width: 220px;
+    height: 150px;
     object-fit: contain;
     display: block;
     margin: 0 auto 20px;
+    border-radius: 10px;
 }
 
 .projects{
