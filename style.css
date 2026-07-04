@@ -142,7 +142,7 @@ body{
     position: relative;
     overflow: hidden;
     
-    min-height:50vh;
+    min-height:30vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -266,7 +266,7 @@ body{
     overflow: hidden;
 
     animation:
-        typing 1s steps(15, end) forwards;
+        typing 0.8s steps(15, end) forwards;
 }
 
 @keyframes typing{
