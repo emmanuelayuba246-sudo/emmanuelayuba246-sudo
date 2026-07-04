@@ -177,6 +177,7 @@ body{
 }
 
 .hero-text 1,
+.hero-text 2,
 .hero-text 3,
 .hero-text p,
 .hero-buttons{
@@ -268,7 +269,7 @@ body{
     overflow: hidden;
 
     animation:
-        typing 0.8s steps(15, end) forwards;
+        typing 0.6s steps(15, end) forwards;
 }
 
 @keyframes typing{
