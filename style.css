@@ -377,17 +377,19 @@ body{
     color: var(--text);
 }
 
-/* ===== CERTIFICATIONS ===== */
-.certification{
-    padding:100px 8%;
-    background: var(--section-bg);
+/* ===== SECTION TITLES ===== */
+.section-title{
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--heading);
+    margin-bottom: 50px;
 }
 
-.certification h2{
-    text-align:center;
-    font-size:40px;
-    color: var(--heading);
-    margin-bottom:50px;
+/* ===== CERTIFICATIONS ===== */
+.certification{
+    padding:120px 8% 80px;
+    background: var(--section-bg);
 }
 
 .certification-grid{
@@ -421,20 +423,22 @@ body{
     border-radius:8px;
 }
 
+/* ===== SECTION TITLES ===== */
+.section-title{
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--heading);
+    margin-bottom: 50px;
+}
+
 .projects{
     margin: 0;
-    padding:100px 8%;
+    padding:120px 8% 80px;
     background: var(--section-bg);
     transition: background-color .4s ease,
                 background .4s ease,
                 color .4s ease,
-}
-
-.projects h2{
-    text-align:center;
-    font-size:40px;
-    color: var(--heading);
-    margin-bottom:50px;
 }
 
 .project-grid{
