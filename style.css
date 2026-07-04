@@ -473,10 +473,10 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: var(--card-bg);
+    background: transparent;
     padding:35px;
     border-radius:20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.40);
 }
 
 .certification-card h3{
@@ -528,11 +528,11 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: var(--card-bg);
+    background: transparent;
     padding:35px;
     border-radius:20px;
     box-shadow: 
-        0 8px 20px rgba(0,0,0,0.12),
+        0 8px 20px rgba(0,0,0,0.40),
         0 18px 45px rgba(0,0,0,0.18);
     transition: background-color .4s ease,
                 background .4s ease,
