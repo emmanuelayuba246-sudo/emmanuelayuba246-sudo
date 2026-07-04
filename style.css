@@ -28,7 +28,7 @@
 
      --btn-bg: rgba(255,255,255,.15);
     --hero-text: #ffffff;
-     --hero-glow: rgba(255,255,255,.06);
+     --hero-glow: rgba(255,255,255,.04);
 
       --hero-bg:
         radial-gradient(circle at top left,#5fa8ff 0%,transparent 35%),
@@ -94,6 +94,7 @@ body{
 
     padding: 0 8%;
     background: var(--navbar);
+    backdrop-filter: blur(12px);
     z-index: 9999;
     transition: background-color .4s ease,
                 background .4s ease,
@@ -147,12 +148,13 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    gap: 25px;
     text-align:center;
     padding:40px 8% 30px;
     color:white;
    
     background: var(--hero-bg);
-    background-size: 130%;
+    background-size: 200% 200%;
 }
 
 @keyframes heroFade{
@@ -167,18 +169,14 @@ body{
 }
 
 @keyframes moveBackground {
-    from {
-        background-position: left;
-    }
-
-    to {
-        background-position: right;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.hero-text 1,
-.hero-text 2,
-.hero-text 3,
+.hero-text h1,
+.hero-text h2,
+.hero-text h3,
 .hero-text p,
 .hero-buttons{
     opacity: 0;
@@ -269,7 +267,7 @@ body{
     overflow: hidden;
 
     animation:
-        typing 0.6s steps(15, end) forwards;
+        typing 0.8s steps(15, end) forwards;
 }
 
 @keyframes typing{
@@ -319,8 +317,7 @@ body{
     border-radius:40px;
     text-decoration:none;
     font-weight:600;
-    transition:transform .2s ease, box-shadow .2s ease;
-    cursor: pointer;
+    transition: all .2s ease;
 }
 
 .btn:hover{
@@ -516,7 +513,7 @@ body{
     background: var(--section-bg);
     transition: background-color .4s ease,
                 background .4s ease,
-                color .4s ease,
+                color .4s ease;
 }
 
 .project-grid{
