@@ -269,7 +269,7 @@ body{
     overflow: hidden;
 
     animation:
-        typing 1s steps(20, end) forwards;
+        typing 1s steps(15, end) forwards;
 }
 
 @keyframes typing{
