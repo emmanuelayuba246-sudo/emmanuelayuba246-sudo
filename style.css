@@ -194,15 +194,15 @@ body{
 }
 
 .hero-text h3{
-    animation-delay: 0.5s;
+    animation-delay: 0.3s;
 }
 
 .hero-text p{
-    animation-delay: 1s;
+    animation-delay: 0.4s;
 }
 
 .hero-buttons{
-    animation-delay: 1.1s;
+    animation-delay: 0.5s;
 }
 
 @keyframes slideUp{
@@ -267,10 +267,9 @@ body{
     width: 0;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid var(--button-bg);
 
     animation:
-        typing 1.8s steps(20, end) forwards;
+        typing 0.6s steps(20, end);
 }
 
 @keyframes typing{
@@ -278,7 +277,7 @@ body{
         width: 0;
     }
     to{
-        width: 16ch;
+        width: 100%;
     }
 }
 
