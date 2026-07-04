@@ -154,8 +154,7 @@ body{
     padding:40px 8% 30px;
     color:white;
    
-    background: var(--bg);
-background-size: 200% 200%;
+    background: transparent;
 }
 
 @keyframes heroFade{
