@@ -402,6 +402,9 @@ body{
 }
 
 .certification-card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background: var(--card-bg);
     padding:35px;
     border-radius:20px;
@@ -418,12 +421,21 @@ body{
 
 .certification-card a{
     display:inline-block;
-    margin-top:15px;
+    margin-top: auto;
+    align-self: flex-start;
     padding:10px 20px;
     background: var(--button-bg);
     color: var(--button-text);
     text-decoration:none;
     border-radius:8px;
+}
+
+.certification-card img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 20px;
 }
 
 .projects{
@@ -444,6 +456,9 @@ body{
 }
 
 .project-card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background: var(--card-bg);
     padding:35px;
     border-radius:20px;
@@ -474,6 +489,8 @@ body{
 }
 
 .project-card a{
+    margin-top: auto;
+    align-self: flex-start;
     display:inline-block;
     padding:10px 20px;
     background: var(--button-bg);
