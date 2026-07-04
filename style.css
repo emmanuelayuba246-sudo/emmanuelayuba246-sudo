@@ -95,7 +95,7 @@ body{
     align-items: center;
 
     padding: 0 8%;
-    background: var(--navbar);
+    background: transparent;
     backdrop-filter: blur(12px);
     z-index: 9999;
     transition: background-color .4s ease,
