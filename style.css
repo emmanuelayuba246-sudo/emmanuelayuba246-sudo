@@ -73,7 +73,7 @@
 
 body{
     margin: 0;
-    background-image: var(--bg);
+    background: var(--bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,7 +85,7 @@ body{
 
 /* ===== Dark Mode (Default) ===== */
 :root{
-    --bg: #0f172a;
+    --bg: #000000;
 
     --section-bg: #0f172a;
     --card-bg: #1e293b;
@@ -177,7 +177,7 @@ body{
     padding:40px 8% 30px;
     color:white;
    
-    background: transparent;
+    background: var(--bg);
 }
 
 @keyframes heroFade{
@@ -375,7 +375,7 @@ body{
 
 .about{
     padding:100px 0;
-    background: transparent;
+    background: var(--bg);
     transition: background-color .4s ease,
                 background .4s ease,
                 color: white,
@@ -408,7 +408,7 @@ body{
 
 .skills{
     padding:100px 0;
-    background: transparent;
+    background: var(--bg);
     
     transition: background-color .4s ease,
                 background .4s ease,
@@ -476,7 +476,7 @@ border:1px solid rgba(255,255,255,.1);;
 /* ===== CERTIFICATIONS ===== */
 .certification{
     padding:100px 0;
-    background: transparent;
+    background: var(--bg);
     color: white;
 }
 
@@ -530,7 +530,7 @@ border:1px solid rgba(255,255,255,.1);
 .projects{
     margin: 0;
     padding:100px 0;
-    background: transparent;
+    background: var(--bg);
     transition: background-color .4s ease,
                 background .4s ease,
                 color .white;
@@ -596,7 +596,7 @@ html{
 .footer{
     width: 100%;
     padding: 25px 0;
-    background: transparent;
+    background: var(--bg);
     border-top: 1px solid rgba(255,255,255,0.1);
 
     display: flex;
