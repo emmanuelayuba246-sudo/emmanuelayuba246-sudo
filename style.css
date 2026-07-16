@@ -587,3 +587,29 @@ body{
     margin-top: 10px;
     font-size: 14px;
 }
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .buttons a {
+        width: 100%;
+    }
+}
