@@ -73,13 +73,13 @@
 
 body{
     margin: 0;
-    background-image: url("images/bg.jpg");
+    background-image: var(--bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: var(--text);
     overflow-x: hidden;
+    color: var(--text);
 }
 /* ===== Theme Colors ===== */
 
@@ -102,12 +102,6 @@ body{
      --btn-bg: rgba(255,255,255,.15);
     --hero-text: #ffffff;
      --hero-glow: rgba(255,255,255,.04);
-
-      --hero-bg:
-        radial-gradient(circle at top left,#5fa8ff 0%,transparent 35%),
-        radial-gradient(circle at bottom right,#1e88e5 0%,transparent 40%),
-        radial-gradient(circle at center,#1565c0 0%,transparent 55%),
-        linear-gradient(135deg,#081c3a 0%,#0d47a1 40%,#1976d2 100%);
 }
 
 /* ===== Navigation ===== */
