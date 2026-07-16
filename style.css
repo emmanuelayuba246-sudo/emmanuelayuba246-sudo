@@ -499,8 +499,8 @@ body{
 }
 
 .certification-card img{
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     object-fit: cover;
     display: block;
     margin: 0 auto 20px;
