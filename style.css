@@ -65,6 +65,12 @@
         linear-gradient(135deg,#081c3a 0%,#0d47a1 40%,#1976d2 100%);
    }
 }
+body{
+    background: url("images/bg.jpg");
+    color: var(--text);
+    margin: 0;
+    overflow-x: hidden;
+}
 /* ===== Navigation ===== */
 
 .navbar{
