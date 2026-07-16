@@ -39,51 +39,31 @@
 
 /* ===== Light Mode ===== */
 @media (prefers-color-scheme: light){
-    :root{
-        --hero-bg:
+   :root{
+    --bg: #0f172a;
+
+    --section-bg: #0f172a;
+    --card-bg: #1e293b;
+
+    --text: #ffffff;
+    --heading: #60a5fa;
+
+    --navbar: rgba(2,11,36,.9);
+    --nav-text: #ffffff;
+
+    --button-bg: #2563eb;
+    --button-text: #ffffff;
+
+     --btn-bg: rgba(255,255,255,.15);
+    --hero-text: #ffffff;
+     --hero-glow: rgba(255,255,255,.04);
+
+      --hero-bg:
         radial-gradient(circle at top left,#5fa8ff 0%,transparent 35%),
         radial-gradient(circle at bottom right,#1e88e5 0%,transparent 40%),
         radial-gradient(circle at center,#1565c0 0%,transparent 55%),
         linear-gradient(135deg,#081c3a 0%,#0d47a1 40%,#1976d2 100%);
-        --bg: #0f172a;
-
-        --section-bg: #f8fafc;
-        --card-bg: #1e293b;
-
-        --text: #1f2937;
-        --heading: #0d47a1;
-
-        --navbar: rgba(255,255,255,.9);
-        --nav-text: #0d47a1;
-
-        --button-bg: #1565c0;
-        --button-text: #ffffff;
-        --btn-bg:#1565c0;
-
-        --hero-text: #ffffff;
-        --hero-glow: rgba(13,71,161,.08);
-    }
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
-body{
-    background: var(--bg);
-    transition: background-color .4s ease,
-                background .4s ease,
-                color .4s ease,
-                border-color .4s ease;
-    background-size: 200% 200%;
-    background-position: center;
-    background-attachment: fixed;
-    animation: moveBackground 15s ease-in-out infinite alternate;
-    
-
-    padding-top: 70px;
-}
-
 /* ===== Navigation ===== */
 
 .navbar{
