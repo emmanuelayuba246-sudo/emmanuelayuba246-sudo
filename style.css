@@ -14,7 +14,7 @@
         flex-direction:column;
         gap:15px;
         height:auto;
-        padding:15px;
+        padding:25px;
     }
 
     .navbar ul{
@@ -386,14 +386,14 @@
 }
 
 .about h2{
-    text-align: justify;
+    text-align: center;
     color: var(--heading);
     font-size:40px;
     margin-bottom:25px;
 }
 
 .about p{
-    text-align:center;
+    text-align:justify;
     font-size:25px;
     color: var(--text);
     max-width:850px;
