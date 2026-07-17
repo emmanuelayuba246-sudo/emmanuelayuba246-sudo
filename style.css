@@ -484,13 +484,14 @@ border:1px solid rgba(255,255,255,.1);;
     margin: 0 auto;
 }
 
-.certification-card{
-    display: flex;
-    flex-direction: column;
-    background: transparent;
-    padding:0px;
-    border: none;
-    box-shadow: none;
+.certification-card a{
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 20px;
+    background: var(--button-bg);
+    color: var(--button-text);
+    text-decoration: none;
+    border-radius: 25px;
 }
 
 .certification-card h3{
@@ -517,7 +518,7 @@ border:1px solid rgba(255,255,255,.1);;
     height: 100px;
     object-fit: cover;
     display: block;
-    margin: 0 auto 20px;
+    margin-botto: 20px;
     border-radius: 10px;
 }
 
