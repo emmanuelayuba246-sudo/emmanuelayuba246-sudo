@@ -487,12 +487,10 @@ border:1px solid rgba(255,255,255,.1);;
 .certification-card{
     display: flex;
     flex-direction: column;
-    height: 50%;
-    background: rgba(255,255,255,.08);
-backdrop-filter: blur(12px);
-border:1px solid rgba(255,255,255,.1);
-    padding:30px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.40);
+    background: transparent;
+    padding:0px;
+    border: none;
+    box-shadow: none;
 }
 
 .certification-card h3{
