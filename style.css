@@ -386,7 +386,7 @@
 }
 
 .about h2{
-    text-align:center;
+    text-align: justify;
     color: var(--heading);
     font-size:40px;
     margin-bottom:25px;
@@ -403,7 +403,7 @@
 }
 
 .skills{
-    padding:10px 0;
+    padding:100px 0;
     background: var(--bg);
     
     transition: background-color .4s ease,
@@ -419,7 +419,7 @@
 
 .skills h2{
     text-align:center;
-    font-size:15px;
+    font-size:25px;
     color: var(--heading);
     margin-bottom:60px;
 }
@@ -544,9 +544,9 @@ border:1px solid rgba(255,255,255,.1);
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: rgba(255,255,255,.08);
+    background: var(--btn-bg);
 backdrop-filter: blur(12px);
-border:1px solid rgba(255,255,255,.1);
+border:1px solid rgba(255,255,255,0.3);
     padding:35px;
     border-radius:20px;
     box-shadow: 
