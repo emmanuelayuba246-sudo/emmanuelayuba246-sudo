@@ -188,80 +188,101 @@ I'm an Agricultural Economist and Data Analyst with a strong interest in applyin
 
 <section id="projects" class="projects">
     <div class="container">
-        
-    <h2 class="section-title">PROJECTS</h2>
-    
-    <div class="project-grid">
-        
-<div class="project-card" data-aos="fade-up">
-<h3>Retail Strategy and Analytics</h3>
-<p>Interactive visualization for sales analysis and business insights.</p>
-<a href="https://github.com/emmanuelayuba246-sudo/Retail-Strategy-and-Analytics">View Project</a>
-</div>
 
-<div class="project-card" data-aos="fade-up">
-<h3>Adidas Sales Dashboard</h3>
-<p>Interactive Power BI dashboard for Adidas Sales.</p>
-<a href="https://github.com/emmanuelayuba246-sudo/ADIDAS-SALES-PERFORMANCE-ANALYSIS">View Project</a>
-</div>
+        <h2 class="section-title">PROJECTS</h2>
 
-<div class="project-card" data-aos="fade-up">
-<h3>Hospital Patient Analysis</h3>
-<p>SQL and Excel analysis of patient records and hospital performance.</p>
-<a href="https://github.com/emmanuelayuba246-sudo/Hospital-Patient-Data-Analysis">View Project</a>
-</div>
+        <div class="project-card">
+            <h3 id="title"></h3>
+            <p id="description"></p>
 
-<div class="project-card" data-aos="fade-up">
-<h3>FIFA Player Performance Analysis</h3>
-<p>Python data analysis exploring player performance and statistics.</p>
-<a href="https://github.com/emmanuelayuba246-sudo/FIFA-Player-Performance-Data-Analysis-">View Project</a>
-</div>
+            <a id="link" href="#" target="_blank">View Project</a>
 
-<div class="project-card" data-aos="fade-up">
-<h3>Education Technology</h3>
-<p>Python data analysis exploring student engagement.</p>
-<a href="https://github.com/emmanuelayuba246-sudo/Education-Technology">View Project</a>
-</div>
+            <div class="project-buttons">
+                <button onclick="previousProject()">⬅ Previous</button>
+                <button onclick="nextProject()">Next ➜</button>
+            </div>
 
-<div class="project-card" data-aos="fade-up">
-<h3>Educational Performance Analysis</h3>
-<p>Python data analysis exploring student performance and statistics.</p>
-<a href="https://github.com/emmanuelayuba246-sudo/Educational-Performance-Data-Analysis">View Project</a>
-</div>
+        </div>
 
-<div class="project-card" data-aos="fade-up">
-<h3>Super Store Sales Performance DAta Analysis</h3>
-<p>Data analysis exploring store performance and statistics.</p>
-<a href="https://github.com/emmanuelayuba246-sudo/Super-Store-Sales-Report">View Project</a>
-</div>
-
-<div class="project-card" data-aos="fade-up">
-<h3>DAta Cleaning (Internship Project)</h3>
-<p>Identifying missig values and duplicated records.</p>
-<a href="https://github.com/emmanuelayuba246-sudo/Data-Cleaning-Project">View Project</a>
-</div>
-
-<div class="project-card" data-aos="fade-up">
-<h3>SQL E-commerce Data Analysis (Internship Project)</h3>
-<p>Extract business insights.</p>
-<a href="https://github.com/emmanuelayuba246-sudo/SQL-Ecommerce-Data-Analysis">View Project</a>
-</div>
-
-<div class="project-card" data-aos="fade-up">
-<h3>EDA (Internship Project)</h3>
-<p>Exploratory Data Analysis.</p>
-<a href="https://github.com/emmanuelayuba246-sudo/EDA-Project">View Project</a>
-</div>
-        
-</div>
-
-</div>
+    </div>
 </section>
+const projects = [
+{
+title:"Retail Strategy and Analytics",
+description:"Interactive visualization for sales analysis and business insights.",
+link:"https://github.com/emmanuelayuba246-sudo/Retail-Strategy-and-Analytics"
+},
+{
+title:"Adidas Sales Dashboard",
+description:"Interactive Power BI dashboard for Adidas Sales.",
+link:"https://github.com/emmanuelayuba246-sudo/ADIDAS-SALES-PERFORMANCE-ANALYSIS"
+},
+{
+title:"Hospital Patient Analysis",
+description:"SQL and Excel analysis of patient records and hospital performance.",
+link:"https://github.com/emmanuelayuba246-sudo/Hospital-Patient-Data-Analysis"
+},
+{
+title:"FIFA Player Performance Analysis",
+description:"Python data analysis exploring player performance and statistics.",
+link:"https://github.com/emmanuelayuba246-sudo/FIFA-Player-Performance-Data-Analysis-"
+},
+{
+title:"Education Technology",
+description:"Python data analysis exploring student engagement.",
+link:"https://github.com/emmanuelayuba246-sudo/Education-Technology"
+},
+{
+title:"Educational Performance Analysis",
+description:"Python data analysis exploring student performance and statistics.",
+link:"https://github.com/emmanuelayuba246-sudo/Educational-Performance-Data-Analysis"
+},
+{
+title:"Super Store Sales Performance Data Analysis",
+description:"Data analysis exploring store performance.",
+link:"https://github.com/emmanuelayuba246-sudo/Super-Store-Sales-Report"
+},
+{
+title:"Data Cleaning (Internship Project)",
+description:"Identifying missing values and duplicate records.",
+link:"https://github.com/emmanuelayuba246-sudo/Data-Cleaning-Project"
+},
+{
+title:"SQL E-commerce Data Analysis",
+description:"Extracting business insights.",
+link:"https://github.com/emmanuelayuba246-sudo/SQL-Ecommerce-Data-Analysis"
+},
+{
+title:"EDA (Internship Project)",
+description:"Exploratory Data Analysis.",
+link:"https://github.com/emmanuelayuba246-sudo/EDA-Project"
+}
+];
 
+let current = 0;
+
+function showProject() {
+document.getElementById("title").textContent = projects[current].title;
+document.getElementById("description").textContent = projects[current].description;
+document.getElementById("link").href = projects[current].link;
+}
+
+function nextProject() {
+current = (current + 1) % projects.length;
+showProject();
+}
+
+function previousProject() {
+current = (current - 1 + projects.length) % projects.length;
+showProject();
+}
+
+showProject();
+</script>
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
     <p>&copy; 2026 Emmanuel Ayuba. All Rights Reserved.</p>
 </footer>
-
+<script>
 </body>
 </html>
