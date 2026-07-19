@@ -191,21 +191,17 @@ I'm an Agricultural Economist and Data Analyst with a strong interest in applyin
 
         <h2 class="section-title">PROJECTS</h2>
 
-        <div class="project-card">
-            <h3 id="title"></h3>
-            <p id="description"></p>
+<div class="project-container">
+    <div id="project-list" class="project-list"></div>
+</div>
 
-            <a id="link" href="#" target="_blank">View Project</a>
-
-            <div class="project-buttons">
-                <button onclick="previousProject()">⬅ Previous</button>
-                <button onclick="nextProject()">Next ➜</button>
-            </div>
-
-        </div>
-
+<div class="project-buttons">
+    <button onclick="previousProjects()">⬅ Previous</button>
+    <button onclick="nextProjects()">Next ➜</button>
+</div>
     </div>
 </section>
+<script>
 const projects = [
 {
 title:"Retail Strategy and Analytics",
@@ -275,14 +271,11 @@ showProject();
 function previousProject() {
 current = (current - 1 + projects.length) % projects.length;
 showProject();
-}
-
-showProject();
 </script>
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
     <p>&copy; 2026 Emmanuel Ayuba. All Rights Reserved.</p>
 </footer>
-<script>
+
 </body>
 </html>
