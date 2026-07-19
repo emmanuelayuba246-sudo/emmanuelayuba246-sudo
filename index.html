@@ -17,9 +17,6 @@ href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
 </head>
 
-<body>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
 <script>
 AOS.init({
     duration: 1000,
@@ -186,91 +183,167 @@ I'm an Agricultural Economist and Data Analyst with a strong interest in applyin
     </div>
 </section>
 
+<!-- ===== PROJECTS ===== -->
 <section id="projects" class="projects">
+
     <div class="container">
 
         <h2 class="section-title">PROJECTS</h2>
 
-<div class="project-container">
-    <div id="project-list" class="project-list"></div>
-</div>
+        <div id="project-list" class="project-list">
+            <!-- Projects will load here -->
+        </div>
 
-<div class="project-buttons">
-    <button onclick="previousProjects()">⬅ Previous</button>
-    <button onclick="nextProjects()">Next ➜</button>
-</div>
+        <div class="project-buttons">
+            <button onclick="previousProjects()">⬅ Previous</button>
+            <button onclick="nextProjects()">Next ➜</button>
+        </div>
+
     </div>
+
 </section>
+
+
 <script>
+
 const projects = [
 {
 title:"Retail Strategy and Analytics",
 description:"Interactive visualization for sales analysis and business insights.",
 link:"https://github.com/emmanuelayuba246-sudo/Retail-Strategy-and-Analytics"
 },
+
 {
 title:"Adidas Sales Dashboard",
 description:"Interactive Power BI dashboard for Adidas Sales.",
 link:"https://github.com/emmanuelayuba246-sudo/ADIDAS-SALES-PERFORMANCE-ANALYSIS"
 },
+
 {
 title:"Hospital Patient Analysis",
 description:"SQL and Excel analysis of patient records and hospital performance.",
 link:"https://github.com/emmanuelayuba246-sudo/Hospital-Patient-Data-Analysis"
 },
+
 {
 title:"FIFA Player Performance Analysis",
 description:"Python data analysis exploring player performance and statistics.",
 link:"https://github.com/emmanuelayuba246-sudo/FIFA-Player-Performance-Data-Analysis-"
 },
+
 {
 title:"Education Technology",
 description:"Python data analysis exploring student engagement.",
 link:"https://github.com/emmanuelayuba246-sudo/Education-Technology"
 },
+
 {
 title:"Educational Performance Analysis",
 description:"Python data analysis exploring student performance and statistics.",
 link:"https://github.com/emmanuelayuba246-sudo/Educational-Performance-Data-Analysis"
 },
+
 {
 title:"Super Store Sales Performance Data Analysis",
 description:"Data analysis exploring store performance.",
 link:"https://github.com/emmanuelayuba246-sudo/Super-Store-Sales-Report"
 },
+
 {
 title:"Data Cleaning (Internship Project)",
 description:"Identifying missing values and duplicate records.",
 link:"https://github.com/emmanuelayuba246-sudo/Data-Cleaning-Project"
 },
+
 {
 title:"SQL E-commerce Data Analysis",
 description:"Extracting business insights.",
 link:"https://github.com/emmanuelayuba246-sudo/SQL-Ecommerce-Data-Analysis"
 },
+
 {
 title:"EDA (Internship Project)",
 description:"Exploratory Data Analysis.",
 link:"https://github.com/emmanuelayuba246-sudo/EDA-Project"
 }
+
 ];
 
+
 let current = 0;
+const projectsPerPage = 3;
 
-function showProject() {
-document.getElementById("title").textContent = projects[current].title;
-document.getElementById("description").textContent = projects[current].description;
-document.getElementById("link").href = projects[current].link;
+
+function displayProjects(){
+
+const projectList = document.getElementById("project-list");
+
+projectList.innerHTML = "";
+
+
+for(let i = current; i < current + projectsPerPage; i++){
+
+let project = projects[i % projects.length];
+
+
+projectList.innerHTML += `
+
+<div class="project-card">
+
+<h3>${project.title}</h3>
+
+<p>${project.description}</p>
+
+<a href="${project.link}" target="_blank">
+View Project
+</a>
+
+</div>
+
+`;
+
 }
 
-function nextProject() {
-current = (current + 1) % projects.length;
-showProject();
 }
 
-function previousProject() {
-current = (current - 1 + projects.length) % projects.length;
-showProject();
+
+
+function nextProjects(){
+
+current += projectsPerPage;
+
+
+if(current >= projects.length){
+
+current = 0;
+
+}
+
+displayProjects();
+
+}
+
+
+
+function previousProjects(){
+
+current -= projectsPerPage;
+
+
+if(current < 0){
+
+current = projects.length - projectsPerPage;
+
+}
+
+displayProjects();
+
+}
+
+
+displayProjects();
+
+
 </script>
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
