@@ -222,7 +222,7 @@ body{
 /* ===== Hero Section ===== */
 
 .hero{
-    animation: heroFade 1s ease forwards;
+    animation: heroFade .5s ease forwards;
     position: relative;
     overflow: hidden;
     
@@ -249,36 +249,25 @@ body{
         transform:translateY(0);
     }
 }
-
-.hero-text h1,
-.hero-text h2,
-.hero-text h3,
-.hero-text p,
-.hero-buttons{
-    opacity: 0;
-    animation: slideUp 0.5s ease forwards;
-}
-
 .hero-text h1{
-    animation-delay: 0.3s;
+    animation-delay:.1s;
 }
 
 .hero-text h2{
-    animation-delay: 0.4s;
+    animation-delay:.2s;
 }
 
 .hero-text h3{
-    animation-delay: 0.6s;
+    animation-delay:.3s;
 }
 
 .hero-text p{
-    animation-delay: 0.7s;
+    animation-delay:.4s;
 }
 
 .hero-buttons{
-    animation-delay: 0.9s;
+    animation-delay:.5s;
 }
-
 @keyframes slideUp{
     from{
         opacity: 0;
@@ -321,6 +310,14 @@ body{
     right:-220px;
     filter:blur(80px);
     pointer-events: none;
+}
+.hero-text h1,
+.hero-text h2,
+.hero-text h3,
+.hero-text p,
+.hero-buttons{
+    opacity: 0;
+    animation: slideUp .5s ease forwards;
 }
 
 .hero h1{
@@ -409,7 +406,7 @@ body{
 
 .hero-image{
     margin-bottom:20px;
-    animation:slideUp .8s ease forwards;
+    animation:slideUp .4s ease forwards;
 }
 
 .hero-image img{
@@ -476,12 +473,6 @@ body{
                 color .4s ease,
                 border-color .4s ease;
 }
-
-.skill-card.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 .skills h2{
     text-align:center;
     font-size:clamp(2rem,5vw,2.7rem);
@@ -503,7 +494,8 @@ body{
     padding:35px;
     text-align:center;
     box-shadow:var(--shadow);
-    transition:all .3s ease;
+    transition:transform .3s ease,
+                box-shadow .3s ease;
 }
 
 .skill-card:hover{
@@ -600,7 +592,8 @@ max-width:320px;
     flex-direction:column;
 
     box-shadow: var(--shadow);
-    transition:all .3s ease;
+    transition:transform .3s ease,
+                box-shadow .3s ease;
     padding:30px;
 border-radius:20px;
 }
