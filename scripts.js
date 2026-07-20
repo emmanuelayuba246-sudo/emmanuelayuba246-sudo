@@ -14,26 +14,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Fade in sections when scrolling
-const sections = document.querySelectorAll("section");
-
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-            observer.unobserve(entry.target);
-        }
-    });
-}, {
-    threshold: 0.15
-});
-
-sections.forEach(section => {
-    section.classList.add("hidden");
-    observer.observe(section);
-});
-
-// Initialize AOS once
+// Initialize AOS
 AOS.init({
     duration: 500,
     easing: "ease-out",
