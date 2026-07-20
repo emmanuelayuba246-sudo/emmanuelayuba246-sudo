@@ -525,7 +525,7 @@ body{
 }
 
 /* ===== CERTIFICATIONS ===== */
-.certification{
+.certifications{
     padding:100px 30px;
     background: var(--bg);
     color: white;
@@ -533,6 +533,8 @@ body{
 
 .certification-card{
 max-width:320px;
+    width:100%;
+    margin:auto;
     display:flex;
     flex-direction:column;
     align-items:center;
