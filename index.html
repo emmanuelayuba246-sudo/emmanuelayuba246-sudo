@@ -16,13 +16,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
 </head>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <script>
 AOS.init({
-    duration: 1000,
-    once: true
+    duration:1000,
+    once:true
 });
 </script>
+<body>
 <header>
     <nav class="navbar">
         <div class="logo">EA</div>
@@ -36,10 +38,12 @@ AOS.init({
 </ul>
 </nav>
 </header>
-    
 <section class="hero" id="home">
 
 <div class="hero-text">
+<div class="hero-image">
+    <img src="images/profile.jpg" alt="Emmanuel Ayuba">
+</div>
 
 <h1>Hi, I'm</h1>
 
@@ -91,7 +95,7 @@ Transforming data into actionable insights for agriculture, development, and evi
 
 <div class="container">
 
-<h2>ABOUT</h2>
+<h2 data-aos="fade-up">ABOUT</h2>
 
 <p>
 
@@ -107,7 +111,7 @@ I'm an Agricultural Economist and Data Analyst with a strong interest in applyin
 
 <div class="container">
 
-<h2>SKILLS</h2>
+<h2 data-aos="fade-up">SKILLS</h2>
 
 <div class="skill-grid">
 
@@ -166,8 +170,8 @@ I'm an Agricultural Economist and Data Analyst with a strong interest in applyin
         </div>
         
         <div class="certification-card" data-aos="fade-up">
-            <img src="images/cousera.jpg" alt="Google">
-            <h3>Google Advanced Data Analytics Professional Certificate.</h3>
+            <img src="images/cousera.jpg" alt="Google Advanced Data Analytics Certificate">
+            <h3>Google Advanced Data Analytics Professional Certificate</h3>
             <p>Coursera • Google</p>
             <a href="certificates/google.pdf" target="_blank">View Certificate</a>
         </div>
@@ -188,18 +192,21 @@ I'm an Agricultural Economist and Data Analyst with a strong interest in applyin
 
     <div class="container">
 
-        <h2 class="section-title">PROJECTS</h2>
+<h2 data-aos="fade-up">PROJECTS</h2>
 
         <div id="project-list" class="project-list">
             <!-- Projects will load here -->
         </div>
 
-        <div class="project-buttons">
-            <button onclick="previousProjects()">⬅ Previous</button>
-            <button onclick="nextProjects()">Next ➜</button>
-        </div>
+<div class="project-buttons">
+    <button class="btn" aria-label="Show previous projects" onclick="previousProjects()">
+        ⬅ Previous
+    </button>
 
-    </div>
+    <button class="btn" aria-label="Show next projects" onclick="nextProjects()">
+        Next ➜
+    </button>
+</div>
 
 </section>
 
@@ -295,7 +302,7 @@ projectList.innerHTML += `
 <p>${project.description}</p>
 
 <a href="${project.link}" target="_blank">
-View Project
+View on GitHub
 </a>
 
 </div>
@@ -343,12 +350,23 @@ displayProjects();
 
 displayProjects();
 
-
+</div>
+</section>
 </script>
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
-    <p>&copy; 2026 Emmanuel Ayuba. All Rights Reserved.</p>
-</footer>
+   <p>&copy; <span id="year"></span> Emmanuel Ayuba. All Rights Reserved.</p>
 
+<script>
+document.getElementById("year").textContent =
+new Date().getFullYear();
+</script>
+</footer>
+<script>
+AOS.init({
+    duration: 1000,
+    once: true
+});
+</script>
 </body>
 </html>
