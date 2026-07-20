@@ -16,7 +16,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
 </head>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <body>
 <header>
@@ -200,8 +199,8 @@ I'm an Agricultural Economist and Data Analyst with a strong interest in applyin
     <button class="btn" aria-label="Show next projects" onclick="nextProjects()">
         Next ➜
     </button>
+    </div>
 </div>
-
 </section>
 
 
@@ -324,34 +323,27 @@ displayProjects();
 
 }
 
-
-
 function previousProjects(){
 
-current -= projectsPerPage;
+    current -= projectsPerPage;
 
+    if(current < 0){
+        current = projects.length - projectsPerPage;
+    }
 
-if(current < 0){
-
-current = projects.length - projectsPerPage;
-
+    displayProjects();
 }
-
 displayProjects();
-
 </script>
-
-</div>
-</section>
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
-   <p>&copy; <span id="year"></span> Emmanuel Ayuba. All Rights Reserved.</p>
+    <p>&copy; <span id="year"></span> Emmanuel Ayuba. All Rights Reserved.</p>
+</footer>
 
 <script>
-document.getElementById("year").textContent =
-new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-</footer>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
 AOS.init({
     duration: 1000,
