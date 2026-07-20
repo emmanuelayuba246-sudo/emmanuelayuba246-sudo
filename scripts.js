@@ -1,26 +1,50 @@
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-        e.preventDefault();
 
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
-        });
+    anchor.addEventListener("click", function(e){
+
+        const target = document.querySelector(this.getAttribute("href"));
+
+        if(target){
+            e.preventDefault();
+
+            target.scrollIntoView({
+                behavior:"smooth",
+                block:"start"
+            });
+        }
+
     });
+
 });
 
 // Fade in sections when scrolling
 const sections = document.querySelectorAll("section");
 
 const observer = new IntersectionObserver(entries => {
+
     entries.forEach(entry => {
+
         if(entry.isIntersecting){
+
             entry.target.classList.add("show");
+
+            observer.unobserve(entry.target);
+
         }
+
     });
+
+},{
+    threshold:0.15
 });
 
-sections.forEach(section => {
+
+sections.forEach(section=>{
+
     section.classList.add("hidden");
+
     observer.observe(section);
+
 });
+IntersectionObserver
