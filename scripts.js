@@ -32,3 +32,11 @@ sections.forEach(section => {
     section.classList.add("hidden");
     observer.observe(section);
 });
+
+// Initialize AOS once
+AOS.init({
+    duration: 500,
+    easing: "ease-out",
+    once: true,
+    offset: 80
+});
