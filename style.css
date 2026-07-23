@@ -17,7 +17,6 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
-}
 /* Desktop */
 .certification-grid{
     display: grid;
@@ -42,14 +41,19 @@ body{
         width: 160px;
         height: auto;
     }
-     .navbar{
-        flex-direction:column;
-    }
-
-    .navbar ul{
-        display:flex;
-        flex-wrap:wrap;
-    }
+   .navbar{
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    height:70px;
+}
+    
+.about,
+.skills,
+.certifications,
+.projects{
+    padding:70px 20px;
+}
 }
 
 /* Small phones */
@@ -65,17 +69,8 @@ body{
 @media (max-width:768px){
 
     .navbar{
-        height:auto;
+        height:70px;
         padding:15px 5%;
-        min-height:70px;
-        gap:15px;
-    }
-
-    .navbar ul{
-        width:100%;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:12px;
     }
 
     .navbar ul li a{
@@ -83,8 +78,8 @@ body{
     }
 
     .hero{
-        min-height:100vh;
-        padding:120px 20px 60px;
+        min-height:auto;
+        padding:120px 20px 80px;
     }
 
     .hero h1{
@@ -230,14 +225,14 @@ body{
     position: relative;
     overflow: hidden;
     
-    min-height:100vh;
+    min-height:auto;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     gap: 25px;
     text-align:center;
-    padding:100px 8% 30px;
+    padding:120px 20px 80px;
     color:white;
    
     background: var(--bg);
@@ -414,8 +409,9 @@ body{
 }
 
 .hero-image img{
-    width:100%;
+    width:min(280px,70vw);
     max-width:320px;
+    height:auto;
     aspect-ratio:1;
     border-radius:50%;
     object-fit:cover;
@@ -536,7 +532,7 @@ body{
 }
 
 .certification-card{
-max-width:320px;
+max-width:420px;
     width:100%;
     margin:auto;
     display:flex;
@@ -578,7 +574,7 @@ max-width:320px;
     background: var(--bg);
     transition: background-color .4s ease,
                 background .4s ease,
-                color . white;
+                color .4s ease;
 }
 
 .project-list{
