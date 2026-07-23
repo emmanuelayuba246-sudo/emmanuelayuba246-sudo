@@ -1,4 +1,7 @@
 /* ===== Google Font ===== */
+html {
+    -webkit-text-size-adjust: 100%;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *{
@@ -12,7 +15,9 @@ html{
 }
 
 body{
-    overflow-x:hidden;
+    width: 100%;
+    overflow-x: hidden;
+}
 }
 /* Desktop */
 .certification-grid{
