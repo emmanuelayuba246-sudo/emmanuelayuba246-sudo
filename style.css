@@ -1,7 +1,4 @@
 /* ===== Google Font ===== */
-html {
-    -webkit-text-size-adjust: 100%;
-}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *{
@@ -11,7 +8,9 @@ html {
     font-family:'Poppins',sans-serif;
 }
 html{
-    scroll-behavior:smooth;
+     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body{
