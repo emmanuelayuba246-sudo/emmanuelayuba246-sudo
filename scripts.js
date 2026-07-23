@@ -21,3 +21,18 @@ AOS.init({
     once: true,
     offset: 80
 });
+projectList.innerHTML += `
+
+<div class="project-card" data-aos="fade-up">
+
+<h3>${project.title}</h3>
+
+<p>${project.description}</p>
+
+<a href="${project.link}" target="_blank">
+View on GitHub
+</a>
+
+</div>
+
+`;
