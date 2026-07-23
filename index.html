@@ -263,7 +263,7 @@ link:"https://github.com/emmanuelayuba246-sudo/EDA-Project"
 
 {
 title:"Web Scraping & EDA of Books Dataset (Internship Project)",
-description:"Book Sales.",
+description:description:"Collected 1,000 book records using BeautifulSoup",
 link:"https://github.com/emmanuelayuba246-sudo/Books-Sales"
 }
 
@@ -288,7 +288,9 @@ let project = projects[i % projects.length];
 
 projectList.innerHTML += `
 
-<div class="project-card">
+<div class="project-card"
+     data-aos="fade-up"
+     data-aos-delay="${(i - current) * 150}">
 
 <h3>${project.title}</h3>
 
@@ -299,6 +301,8 @@ View on GitHub
 </a>
 
 </div>
+
+`;
 
 `;
 
