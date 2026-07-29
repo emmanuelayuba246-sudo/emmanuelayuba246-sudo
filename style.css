@@ -161,8 +161,8 @@ body{
     --heading: #ffffff;
     --navbar: rgba(2,11,36,.9);
     --nav-text: #ffffff;
-    --button-bg: #2563eb;
-    --button-text: #ffffff;
+--button-bg: #6b7280;
+--button-text: #ffffff;
 
     --btn-bg:rgba(255,255,255,.15);
     --hero-text: #ffffff;
@@ -405,6 +405,8 @@ body{
 }
 
 .btn:hover{
+        background: #d1d5db;
+    color: #111827;
     transform:translateY(-5px);
     box-shadow:0 12px 25px rgba(0,0,0,.25);
 }
