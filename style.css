@@ -16,10 +16,10 @@ html{
 body{
     background: linear-gradient(
         135deg,
-        #0b3d2e 0%,
-        #2d6a4f 35%,
-        #6c584c 70%,
-        #a98467 100%
+        #06140e 0%,
+        #0b3d2e 35%,
+        #3f2a1d 70%,
+        #1a120b 100%
     );
 
     background-attachment: fixed;
