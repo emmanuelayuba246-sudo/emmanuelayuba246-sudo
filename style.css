@@ -16,6 +16,14 @@ html{
 body{
     width: 100%;
     overflow-x: hidden;
+    background: linear-gradient(
+        135deg,
+        #020617 0%,
+        #0f172a 30%,
+        #1e293b 70%,
+        #334155 100%
+    );
+    background-attachment: fixed;
 }
 /* Desktop */
 .certification-grid{
@@ -139,17 +147,21 @@ body{
 
 /* ===== Dark Mode (Default) ===== */
 :root{
-    --bg: #000000;
+    --bg: linear-gradient(
+        135deg,
+        #020617 0%,
+        #0f172a 35%,
+        #1e293b 70%,
+        #334155 100%
+    );
 
     --section-bg: #0f172a;
     --card-bg: #1e293b;
-
+    
     --text: #ffffff;
     --heading: #ffffff;
-
     --navbar: rgba(2,11,36,.9);
     --nav-text: #ffffff;
-
     --button-bg: #2563eb;
     --button-text: #ffffff;
 
@@ -235,7 +247,7 @@ body{
     padding:120px 20px 80px;
     color:white;
    
-    background: var(--bg);
+    background: transparent;
 }
 
 @keyframes heroFade{
@@ -433,7 +445,7 @@ body{
 
 .about{
     padding:100px 0;
-    background: var(--bg);
+    background: transparent;
     transition: background-color .4s ease,
                 background .4s ease,
                 color .4s ease,
@@ -466,7 +478,7 @@ body{
 
 .skills{
     padding:100px 0;
-    background: var(--bg);
+    background: transparent;
     
     transition: background-color .4s ease,
                 background .4s ease,
@@ -527,7 +539,7 @@ body{
 /* ===== CERTIFICATIONS ===== */
 .certifications{
     padding:100px 30px;
-    background: var(--bg);
+    background: transparent;
     color: white;
 }
 
@@ -571,7 +583,7 @@ max-width:420px;
 .projects{
     margin: 0;
     padding:100px 0;
-    background: var(--bg);
+    background: transparent;
     transition: background-color .4s ease,
                 background .4s ease,
                 color .4s ease;
@@ -648,7 +660,7 @@ cursor:pointer;
 .footer{
     width: 100%;
     padding: 25px 0;
-    background: var(--bg);
+    background: transparent;
     border-top: 1px solid rgba(255,255,255,0.1);
 
     display: flex;
